@@ -182,7 +182,6 @@ header {
 .home p {
   color: var(--white-color);
   text-align: justify;
-  margin-right: 300px;
 }
 
 .valores {  /*Espaçamento entre último tópico e o formulário de contato*/
