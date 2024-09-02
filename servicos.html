@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./logo/logo-favicon.ico" type="image/x-icon">
+  <title>MaffessoniTech</title>
+  <!--LINK BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--FIM LINK BOOTSTRAP-->
+
+  <!--LINK CSS EXTERNO-->
+  <link rel="stylesheet" href="./servicos.css">
+  <!--FIM LINK CSS EXTERNO-->
+
+  <!--INICIO FONTE NEW AMSTERDAM-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+  <!--FIM FONTE NEW AMSTERDAM-->
+
+  <!--INICIO FONTE INTER-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap" rel="stylesheet">  
+  <!--FIM FONTE INTER-->
+
+  <!--INICIO ICONES-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+  <!--FIM ICONES-->
+
+</head>
+<body>
+  <header class="d-flex justify-content-center py-3">
+    <!--INICIO CABEÇALHO-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logo/logomarca.png" alt="Logo Maffessoni Tech">
+            </a>
+            <button class="navbar-toggler" onclick="toggleSidebar()">☰</button>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="index.html" class="nav-link Home" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="servicos.html" class="nav-link Servicos">Serviços</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link">Contato </a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <!--FIM CABEÇALHO-->
+
+  <!--SIDEBAR-->
+  <div class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">×</button>
+      <ul class="sidebar-nav">
+          <li><a href="index.html" class="nav-link Home">Home</a></li>
+          <li><a href="servicos.html" class="nav-link Servicos">Serviços</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+  </div>
+
+
+  <!--INICIO MODAL-->
+  <div class="modal fade modal-geral" id="orcamentoModal" tabindex="-1" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orcamentoModalLabel">Formulário de Orçamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="uf" class="form-label">UF</label>
+                        <input type="text" class="form-control" id="uf" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Data desejada para a realização do serviço</label>
+                        <input type="date" class="form-control" id="data" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="observacoes" class="form-label">Observações</label>
+                        <textarea class="form-control" id="observacoes" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+  </div><!--FIM MODAL-->
+
+  <!--INICIO SERVIÇOS-->
+  <div class="container">
+    <div class="servicos">
+      <div class="hardware">
+        <div class="txt-servico">
+          <h1>Reparo e Substituição de Hardware</h1>
+          <p> Este serviço inclui a identificação de falhas em componentes físicos do computador, como placas-mãe, discos rígidos, fontes de alimentação, e memória RAM. Nós realizamos diagnósticos precisos para determinar a necessidade de reparo ou substituição de peças danificadas. Além disso, a empresa oferece a instalação de novos componentes, garantindo que o sistema esteja operando com máximo desempenho e eficiência.<br><br>
+          Preço:<br> A partir de R$ 150,00. O valor final pode variar de acordo com o diagnóstico e a necessidade de substituição de componentes.<br>
+          <br>
+          Detalhes:<br>
+          Tempo para realizar o serviço: Normalmente, o diagnóstico é realizado em até 2 dias úteis, e a substituição de peças pode levar de 1 a 3 dias adicionais, dependendo da disponibilidade dos componentes.
+          Dias de atendimento: Segunda a sexta-feira.
+          Horários de atendimento: 09:00 às 18:00.
+          </p>
+          <div class="text-center btn-orcamento"><!--INICIO BOTÃO ORÇAMENTO-->
+            <button type="button" class="btn btn-request-quote" data-bs-toggle="modal" data-bs-target="#orcamentoModal">
+              Fazer Orçamento
+            </button> 
+          </div><!--FIM BOTÃO ORÇAMENTO-->
+
+            <!--INICIO CARROSSEL-->
+          <div id="carousel" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./serviços/manutencao-hardware.png" class="d-block w-100" alt="Foto de Hardware 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./serviços/hardware.jpg" class="d-block w-100" alt="Foto de Hardware 2">
+                </div>
+                <div class="carousel-item">
+                  <iframe src="https://www.youtube.com/embed/NUfsMuyMX-k?si=SkVijneKAw8WKhZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+          </div><!--FIM CARROSSEL-->
+        </div><!--FIM TEXTO-SERVIÇO-->
+      </div><!--FIM HARDWARE-->
+
+    <div class="malware">
+      <div class="txt-servico">
+        <h1>Remoção de Malware (Vírus)</h1>
+        <p>A Maffessoni Tech oferece um serviço completo de remoção de vírus e malwares, que inclui a varredura detalhada do sistema para identificar e eliminar qualquer ameaça à segurança digital do cliente. O processo envolve o uso de ferramentas avançadas para remover softwares maliciosos, reparar danos causados por infecções e proteger o sistema contra futuras ameaças. Este serviço também inclui a instalação de soluções de segurança e orientação ao cliente sobre práticas seguras de navegação na internet.<br><br>
+        Preço: <br>A partir de R$ 100,00. O preço pode aumentar conforme a complexidade e a quantidade de ameaças detectadas.
+        <br><br>
+        Detalhes:<br>
+        Tempo para realizar o serviço: A remoção de vírus e malware geralmente é concluída em até 24 horas, mas em casos mais complexos, pode levar até 2 dias úteis.
+        Dias de atendimento: Segunda a sexta-feira.
+        Horários de atendimento: 09:00 às 18:00.
+        </p>
+        <div class="text-center btn-orcamento"><!--INICIO BOTÃO ORÇAMENTO-->
+          <button type="button" class="btn btn-request-quote" data-bs-toggle="modal" data-bs-target="#orcamentoModal">
+              Fazer Orçamento
+          </button> 
+        </div><!--FIM BOTÃO ORÇAMENTO-->
+
+        <!--INICIO CARROSSEL-->
+        <div id="carouselmalware" class="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./serviços/remover-malware.png" class="d-block w-100" alt="Foto de Malware 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="./serviços/remover-malware-teste.png" class="d-block w-100" alt="Foto de Malware 2">
+              </div>
+              <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/LWf755rRKGM?si=_l4tkW2kFX23nQeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+        
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselmalware" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselmalware" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div><!--FIM CARROSSEL-->
+      </div><!--FIM TEXTO-SERVIÇO-->
+    </div><!--FIM MALWARE-->
+
+      <div class="redes">
+        <div class="txt-servico">
+          <h1>Configuração de Redes Domésticas e Empresariais</h1>
+          <p>Especializados na configuração e otimização de redes para residências e pequenas empresas. O serviço inclui a instalação de roteadores, switches, e outros equipamentos de rede, além da configuração de conexões seguras e estáveis. A equipe realiza o planejamento e a implementação de redes que atendam às necessidades específicas do cliente, seja para aumentar a cobertura do Wi-Fi em casa ou para configurar uma rede corporativa eficiente e segura.<br><br>
+          Preço: <br>A partir de R$ 200,00. O valor depende do tamanho da rede e da complexidade da configuração.
+          <br><br>
+          Detalhes:<br>
+          Tempo para realizar o serviço: A instalação e configuração de redes pode variar de 1 a 3 dias, dependendo do tamanho e da complexidade da rede a ser configurada.
+          Dias de atendimento: Segunda a sexta-feira.
+          Horários de atendimento: 09:00 às 18:00.
+          </p>
+          <div class="text-center btn-orcamento"><!--INICIO BOTÃO ORÇAMENTO-->
+            <button type="button" class="btn btn-request-quote" data-bs-toggle="modal" data-bs-target="#orcamentoModal">
+              Fazer Orçamento
+            </button> 
+          </div><!--FIM BOTÃO ORÇAMENTO-->
+
+          <!--INICIO CARROSSEL-->
+        <div id="carouselredes" class="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./serviços/ajuste-de-rede.jpg" class="d-block w-100" alt="Foto de redes 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="./serviços/data-center.jpg" class="d-block w-100" alt="Foto de redes 2">
+              </div>
+              <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/JvvKYsQKiIk?si=M81nyLJmfg0lKCZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselredes" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselredes" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <!--FIM CARROSSEL-->
+
+        </div><!--FIM TEXTO-SERVIÇO-->
+      </div><!--FIM REDES-->
+    </div><!--FIM SERVIÇOS-->
+  </div><!--FIM CONTAINER-->
+
+  <footer class="d-flex flex-column align-items-center py-3 my-4 border-top"><!--INICIO RODAPÉ-->
+    <!-- FORMULÁRIO DE CONTATO -->
+    <div id="contato" class="footer-contact-form text-center mb-4">
+      <h2>Entre em contato!</h2>
+      <form>
+        <input type="text" placeholder="Seu Nome" required>
+        <input type="email" placeholder="Seu Email" required>
+        <textarea placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  
+    <div class="social-icons">
+      <a href="#" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+      <a href="#" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="#" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </div>
+
+    <!-- OUTROS ITENS DO RODAPÉ -->
+    <div class="footer-other-content d-flex flex-column align-items-center">
+      <ul class="nav nav-pills rodape-links">
+        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contato </a></li>
+      </ul>
+
+      <p class="mb-0 text-body-secondary--bs-light">© 2024 Maffessoni Tech, Inc.</p>
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+    </div>
+  </footer><!--FIM RODAPÉ-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+/* Cores personalizadas */
+:root {
+--primary-color: #121242;
+--secondary-color: #3f40ea;
+--white-color: #ffffff;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background-color: var(--primary-color);
+}
+
+/*FONTE NEW AMSTERDAM PARA TÍTULOS, CABEÇALHO E RODAPÉ*/
+h1, h2, h3, h4, h5, h6, header, footer {
+font-family: 'New Amsterdam', serif;
+}
+
+/*NAVBAR*/
+.nav-link {
+color: var(--white-color);
+margin: 20px;
+}
+
+.navbar-brand img {
+height: 100px; /* Ajuste a altura da logo conforme necessário */
+}
+
+.navbar-nav {
+flex-direction: row;
+}
+
+.nav-item {
+margin-left: 15px;
+}
+
+.nav-link.Sobre {
+background-color: var(--secondary-color);
+}
+
+.nav-link:hover {
+transform: scale(1.05);
+box-shadow: 0 0 10px var(--white-color);
+color: var(--white-color);
+}
+
+header {
+background-color: var(--primary-color);
+height: 100px; /* Define a altura fixa */
+}
+
+/* Configurações gerais */
+.container {
+    margin: 30px;
+}
+
+.interface {
+    max-width: 1720px;
+    margin: auto;
+    padding: 40px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+/*SOBRE-NÓS*/
+
+section.sobre-nos {
+    display: flex;
+    justify-content: center;
+}
+
+h2.titulo {
+    color: var(--white-color);
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--secondary-color);
+}
+
+/* Sobre Ana */
+section.sobre-ana {
+    padding: 40px 4%;
+    cursor: default;
+}
+
+section.sobre-ana .flex {
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre-ana .txt-sobre {
+    color: #fff;
+}
+
+.sobre-ana .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre-ana .txt-sobre h2 span {
+    color: var(--secondary-color);
+    display: block;
+}
+
+.sobre-ana .txt-sobre p {
+    margin-right: 100px;
+    text-align: justify;
+}
+
+.sobre-ana .img-sobre img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.sobre-ana .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+/* Sobre Carlos */
+section.sobre-carlos {
+    padding: 40px 4%;
+    padding-top: 2px;
+    cursor: default;
+}
+
+section.sobre-carlos .flex {
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.sobre-carlos .txt-sobre {
+    color: var(--white-color);
+}
+
+.sobre-carlos .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre-carlos .txt-sobre h2 span {
+    color: var(--secondary-color);
+    display: block;
+}
+
+.sobre-carlos .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre-carlos .img-sobre img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.sobre-carlos .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+/* Sobre Fernando */
+section.sobre-fernando {
+    padding: 40px 4%;
+    padding-top: 2px;
+    cursor: default;
+}
+
+section.sobre-fernando .flex {
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre-fernando .txt-sobre {
+    color: var(--white-color);
+}
+
+.sobre-fernando .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre-fernando .txt-sobre h2 span {
+    color: var(--secondary-color);
+    display: block;
+}
+
+.sobre-fernando .txt-sobre p {
+    margin-right: 200px;
+    text-align: justify;
+}
+
+.sobre-fernando .img-sobre img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.sobre-fernando .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+/*LOCALIZAÇÃO*/
+/* Sobre Fernando */
+section.localizacao {
+    padding: 40px 4%;
+    padding-top: 2px;
+    cursor: default;
+}
+
+section.localizacao iframe{
+    border-radius: 60px;
+}
+
+section.localizacao .flex {
+    align-items: center;
+    gap: 30px;
+}
+
+.localizacao .txt-sobre {
+    color: var(--white-color);
+}
+
+.localizacao .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.localizacao .txt-sobre h2 span {
+    color: var(--secondary-color);
+    display: block;
+}
+
+.localizacao .txt-sobre p {
+    margin-right: 200px;
+    text-align: justify;
+}
+
+.localizacao .img-sobre img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.localizacao .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+
+/*ACORDEON DEPOIMENTOS*/
+
+.accordion {
+    width: 100%;
+    background-color: var(--secondary-color);
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+.accordion-button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.accordion-body img {
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 500px;
+}
+
+.accordion-collapse.show .accordion-body img {
+    display: block;
+}
+
+.interface {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.txt-sobre {
+    width: 100%;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.txt-sobre h2 {
+    color: var(--white-color);
+}
+
+
+
+/*RODAPÉ*/
+footer {
+    background-color:var(--primary-color);
+    color: var(--white-color);
+}
+
+.text-body-secondary {
+    color: var(--white-colors);
+}
+
+.footer-contact-form {
+    max-width: 400px; /* Ajuste a largura máxima conforme necessário */
+    width: 700%;
+}
+
+.footer-contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contact-form input,
+.footer-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-contact-form button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--white-color);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--white-color); /* Cor dos ícones */
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.05);
+}
+
+.footer-other-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-other-content p {
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.footer-other-content a {
+    margin-bottom: 10px;
+}
+
+.footer-other-content ul li a:hover {
+    color: var(--white-color);
+}
+
+.rodape-links {
+    margin-bottom: 50px;
+}
+
+
+
