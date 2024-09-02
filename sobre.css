@@ -517,48 +517,36 @@ footer {
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
-    .carousel-item {
-      height: 300px;
-    }
-    .carousel-caption {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 24px;
-      max-width: 100%; /* Para telas pequenas, usar 100% de largura */
-      padding: 0 10px; /* Menor padding para maximizar espaço de texto */
-      display: block;
-    }
-    p {
-      font-size: 14px;
-      max-width: 100%; /* Para telas pequenas, usar 100% de largura */
-      padding: 0 10px; /* Menor padding para maximizar espaço de texto */
-      display: block;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .footer-contact-form {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .footer-other-content ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-    
-  @media (max-width: 768px) {
     .accordion-body img {
+        max-width: 150px; /* Reduza para 150px para uma melhor adaptação */
+        max-height: 150px;
         max-width: 100%;
         max-height: auto;
     }
+    h1 {
+        font-size: 24px;
+        max-width: 100%; /* Para telas pequenas, usar 100% de largura */
+        padding: 0 10px; /* Menor padding para maximizar espaço de texto */
+        display: block;
+      }
+      p {
+        font-size: 14px;
+        max-width: 100%; /* Para telas pequenas, usar 100% de largura */
+        padding: 0 10px; /* Menor padding para maximizar espaço de texto */
+        display: block;
+      }
+      .interface {
+        display: block;
+      }
+      .footer-contact-form {
+          width: 100%;
+        }
+        .footer-other-content ul {
+          flex-direction: column;
+          align-items: center;
+      }
   }
+  
   
 
 
