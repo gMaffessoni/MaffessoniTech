@@ -34,19 +34,40 @@
 
 </head>
 <body>
-  <header class="d-flex justify-content-center py-3"><!--INICIO CABEÇALHO-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./logo/logomarca.png" alt="Logo Maffessoni Tech">
-        </a>
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="index.html" class="nav-link Home" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="servicos.html" class="nav-link Servicos">Serviços</a></li>
-      <li class="nav-item"><a href="#" class="nav-link Sobre">Sobre Nós</a></li>
-      <li class="nav-item"><a href="#contato  " class="nav-link">Contato </a></li>
-    </ul>
-  </header><!--FIM CABEÇALHO-->
+    <header class="d-flex justify-content-center py-3">
+        <!--INICIO CABEÇALHO-->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./logo/logomarca.png" alt="Logo Maffessoni Tech">
+                </a>
+                <button class="navbar-toggler" onclick="toggleSidebar()">☰</button>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="index.html" class="nav-link Home" aria-current="page">Home</a></li>
+                            <li class="nav-item"><a href="servicos.html" class="nav-link Servicos">Serviços</a></li>
+                            <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                            <li class="nav-item"><a href="#contato" class="nav-link">Contato </a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+      <!--FIM CABEÇALHO-->
+    
+      <!--SIDEBAR-->
+      <div class="sidebar" id="sidebar">
+          <button class="close-btn" onclick="toggleSidebar()">×</button>
+          <ul class="sidebar-nav">
+              <li><a href="index.html" class="nav-link Home">Home</a></li>
+              <li><a href="servicos.html" class="nav-link Servicos">Serviços</a></li>
+              <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+              <li><a href="#contato" class="nav-link">Contato</a></li>
+          </ul>
+      </div>
+    
 
     <section id="section3" class="sobre-ana">
         <div class="interface">

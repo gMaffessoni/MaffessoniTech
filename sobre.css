@@ -29,6 +29,12 @@ height: 100px; /* Ajuste a altura da logo conforme necessário */
 flex-direction: row;
 }
 
+.navbar-toggler {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+  }
+
 .nav-item {
 margin-left: 15px;
 }
@@ -42,6 +48,82 @@ transform: scale(1.05);
 box-shadow: 0 0 10px var(--white-color);
 color: var(--white-color);
 }
+
+/*SIDEBAR*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000; /* Para garantir que a sidebar fique acima de outros elementos */
+  }
+  
+  .sidebar.active {
+    width: 250px;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    background: none;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav li {
+    margin: 20px 0;
+  }
+  
+  .sidebar-nav a {
+    font-family: 'Inter', sans-serif;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 30px;
+  }
+  
+  .sidebar-nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+        display: none; /* Oculta a navbar no mobile, exibida na sidebar */
+    }
+    
+    .navbar-toggler {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+  
+    .navbar-collapse {
+        display: flex;
+    }
+  }
 
 header {
 background-color: var(--primary-color);
@@ -234,7 +316,6 @@ section.sobre-fernando .flex {
 }
 
 /*LOCALIZAÇÃO*/
-/* Sobre Fernando */
 section.localizacao {
     padding: 40px 4%;
     padding-top: 2px;
@@ -433,6 +514,52 @@ footer {
 .rodape-links {
     margin-bottom: 50px;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+    .carousel-item {
+      height: 300px;
+    }
+    .carousel-caption {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+      max-width: 100%; /* Para telas pequenas, usar 100% de largura */
+      padding: 0 10px; /* Menor padding para maximizar espaço de texto */
+      display: block;
+    }
+    p {
+      font-size: 14px;
+      max-width: 100%; /* Para telas pequenas, usar 100% de largura */
+      padding: 0 10px; /* Menor padding para maximizar espaço de texto */
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-contact-form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-other-content ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+    
+  @media (max-width: 768px) {
+    .accordion-body img {
+        max-width: 100%;
+        max-height: auto;
+    }
+  }
+  
 
 
 
