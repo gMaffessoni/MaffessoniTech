@@ -29,6 +29,12 @@ h1, h2, h3, h4, h5, h6, header, footer {
   flex-direction: row;
 }
 
+.navbar-toggler {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
 .nav-item {
   margin-left: 15px;
 }
@@ -105,6 +111,8 @@ h1, h2, h3, h4, h5, h6, header, footer {
   
   .navbar-toggler {
       display: inline-block;
+      background-color: var(--secondary-color);
+      color: var(--white-color);
   }
 }
 
